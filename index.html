@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of Heavens...❤✨</title>
+    <!-- fevicon -->
+    <link rel="icon" href="images/jeeva.png">
+    <!-- googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Oi&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/cfb52076d0.js" crossorigin="anonymous"></script>
+    <!-- cssfile -->
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+<body>
+
+    <!-- header section -->
+    <header>
+        <nav>
+            <div class="nav-left">
+                <h2 class="logo">TOH</h2>
+            </div>
+            <div class="nav-right">
+                <ul class="link-list">
+                    <li class="link-item"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li class="link-item"><a href=""><i class="fa-regular fa-comment"></i>About Us</a></li>
+                    <li class="link-item"><a href=""></i><i class="fa-solid fa-users"></i> Members</a></li>
+                    <li class="link-item"><a href=""><i class="fa-solid fa-handshake-simple"></i> join</a></li>
+                </ul>
+            </div>
+           <button class="btn-right">
+            <span class="btn-bar"></span>
+           </button>
+        </nav>
+    </header>
+    <div class="mobile-nav">
+        <ul class="mob-link-list">
+            <li class="mob-link-item"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="mob-link-item"><a href=""><i class="fa-regular fa-comment"></i>About Us</a></li>
+            <li class="mob-link-item"><a href=""></i><i class="fa-solid fa-users"></i> Members</a></li>
+            <li class="mob-link-item"><a href=""><i class="fa-solid fa-handshake-simple"></i> join</a></li>
+        </ul>
+    </div>
+   
+    <script>
+        window.onload=function(){
+           const nav_btn = document.querySelector('.btn-right');
+           const mobile_nav = document.querySelector('.mobile-nav');
+
+           nav_btn.addEventListener('click',function(){
+              
+            nav_btn.classList.toggle('active');
+            mobile_nav.classList.toggle('active');
+           });
+        }
+    </script>
+</body>
+</html>

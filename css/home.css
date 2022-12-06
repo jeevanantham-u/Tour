@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    font-family: 'Zen Dots', cursive;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:black
+}
+.btn-right{
+    display: none;
+}
+
+
+
+/* navbar****************************************************/
+header{
+    padding: 2% 5%;
+}
+
+nav{
+    padding: 0 5%;
+    background-color: green;
+    display: flex;
+    justify-content:space-between ;
+    border-radius: 25px;
+}
+.logo{
+    color: white;
+}
+.link-item{
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+/* mobile navigation******************************************************************************* */
+.mobile-nav{
+    background-color: green;
+    border-radius: 25px;
+    width: 50%;
+    text-align: center;
+    margin:2% 5%;
+    left: -50%;
+    position: fixed;
+    left: -60%;
+    z-index: 99;
+    transition: 0.5s;
+}
+.mob-link-list{
+    padding: 20px;
+}
+.mob-link-item {
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+
+
+/* right-button********************************************************************** */
+.btn-right{
+    margin-top: 15px;
+    width: 45px;
+    height: 40px;
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.btn-right::after,
+.btn-bar,
+.btn-right::before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    display: block;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+
+/*active classs********************************************** */
+ .btn-right.active::before{
+    transform: rotate(45deg) translate(6px,7px);
+ }
+ .btn-right.active::after{
+    transform: rotate(-45deg) translate(6px,-7px);
+ }
+ .btn-right.active .btn-bar{
+    opacity: 0;
+ }
+ .mobile-nav.active{
+   left: 0;
+ }
+/* media quqrey****************************************************************************** */
+@media (max-width:892px) {
+    .nav-right{
+        display: none;
+    }
+    .btn-right{
+        display:block;
+    }
+    .mob-nav{
+        display: block;
+    }
+}
+
